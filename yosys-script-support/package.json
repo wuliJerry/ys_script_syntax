@@ -1,0 +1,25 @@
+{
+  "name": "yosys-script-support",
+  "displayName": "Yosys Script Support",
+  "description": "A language support for Yosys Script",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "yosys-script",
+      "aliases": ["yosys-script", "yosys-script"],
+      "extensions": [".ys"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "yosys-script",
+      "scopeName": "source.ys",
+      "path": "./syntaxes/yosys-script.tmLanguage.json"
+    }]
+  }
+}
